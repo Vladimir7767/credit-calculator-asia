@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Best Free Loan & Credit Calculator Online 2026 — EMIs Calculator</title>
+<meta name="description" content="Free online loan and credit calculator for Asia. Calculate monthly EMIs, total interest, and repayment amounts instantly in 1 click without registration.">
+<style>
+body{font-family:'Segoe UI',sans-serif;background:#f4f6f9;margin:0;padding:20px;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.05);max-width:440px;width:100%;text-align:center}
+h2{text-align:center;margin-top:0;color:#1e293b}
+.form-group{margin-bottom:12px;text-align:left}
+label{display:block;margin-bottom:4px;font-weight:600;color:#475569;font-size:13px}
+input{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box;font-size:14px;color:#334155}
+button{width:100%;padding:12px;background:#0284c7;border:none;color:#fff;font-weight:bold;border-radius:6px;cursor:pointer;margin-top:10px}
+button:hover{background:#0369a1}
+.res{margin-top:15px;padding:15px;display:none;background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;text-align:left;font-size:14px;line-height:1.5}
+.ad{display:none;margin-top:15px;min-height:100px;text-align:center}
+.faq{margin-top:20px;border-top:1px solid #e2e8f0;padding-top:15px;font-size:12px;color:#64748b;text-align:left;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>Loan Calculator</h2>
+<div class="form-group">
+<label>Loan Amount ($ or ₹):</label>
+<input type="number" id="amount" placeholder="E.g., 50000" required>
+</div>
+<div class="form-group">
+<label>Annual Interest Rate (%):</label>
+<input type="number" id="interest" placeholder="E.g., 8.5" step="0.1" required>
+</div>
+<div class="form-group">
+<label>Loan Tenure (in Months):</label>
+<input type="number" id="months" placeholder="E.g., 12" required>
+</div>
+<button onclick="calcLoan()">Calculate Monthly EMI</button>
+<div id="resBox" class="res"></div>
+<div id="ads" class="ad"><div id="container-e8c895e6c70ade8e4ef4a72354f42e97"></div></div>
+<div class="faq">
+<h3>What is an EMI payment?</h3>
+<p>An EMI (Equated Monthly Installment) is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. EMIs are applied to both interest and principal each month so that over a specified number of years, the loan is paid off in full.</p>
+</div>
+</div>
+<script>
+function showAds(){
+const c=document.getElementById('ads');
+if(!window.adScriptLoaded){
+window.atOptions={'key':'e8c895e6c70ade8e4ef4a72354f42e97','format':'iframe','height':90,'width':728,'params':{}};
+var s=document.createElement('script');s.type='text/javascript';s.async=!0;
+s.src=['https://','bagelstoppage.','com/','e8c895e6c70ade8e4ef4a72354f42e97/','invoke.js'].join('');c.appendChild(s);window.adScriptLoaded=!0
+}c.style.display='block'
+}
+function calcLoan(){
+const p=parseFloat(document.getElementById('amount').value);
+const r=parseFloat(document.getElementById('interest').value)/100/12;
+const n=parseInt(document.getElementById('months').value);
+const box=document.getElementById('resBox');
+if(isNaN(p)||isNaN(r)||isNaN(n)||p<=0||n<=0){alert('Please enter valid numeric parameters.');return}
+let monthly=0;
+if(r===0){monthly=p/n;}else{monthly=(p*r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);}
+const totalPay=monthly*n;
+const totalInterest=totalPay-p;
+box.innerHTML='<strong>Monthly EMI:</strong> '+monthly.toFixed(2)+'<br><strong>Total Repayments:</strong> '+totalPay.toFixed(2)+'<br><strong>Total Interest Payable:</strong> <span style="color:#16a34a;font-weight:bold">'+totalInterest.toFixed(2)+'</span>';
+box.style.display='block';
+showAds()
+}
+</script>
+<div style="display:none!important;visibility:hidden!important;opacity:0!important;width:0!important;height:0!important;position:absolute!important;top:-9999px!important;">
+<h2>Online mortgage and loan calculator free — EMI calculator India, Singapore</h2>
+<p>Calculate your monthly personal, home, or car loan EMIs, interest payable, and dynamic loan amortization locally via our fast simulation utility.</p>
+<ul>
+<li>free emi loan calculator online india</li>
+<li>calculate monthly loan interest singapore</li>
+<li>home mortgage tenure checker free malaysia</li>
+</ul>
+</div>
+</body>
+</html>
